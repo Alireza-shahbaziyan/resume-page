@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body>
+<body id="body">
     <!-- this is header peage -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,7 +40,8 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Back-end</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="{backEndFunc()}"
+                                        id="Back-end">Back-end</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -80,6 +81,9 @@
             </div>
         </div>
     </header>
+
+    <!-- About box -->
+
     <div class="section" id="About">
         <div class="d-flex justify-content-center">
             <div class="card">
@@ -90,11 +94,14 @@
                                 <div class="card-body">
                                     <h5 class="card-title">About me:</h5>
                                     <p class="card-text">
-                                        Hi, I'm Alireza Shahbazian.I was born on July 19, 2001 and I am now 20 years
+                                        Hi, I'm <b>Alireza Shahbazian</b>.I was born on July 19, 2001 and I am now 20
+                                        years
                                         old. I started programming seriously with Python at the
-                                        age of 20, and then I became familiar with JavaScript.<br> Six months later, I made
+                                        age of 20, and then I became familiar with JavaScript.<br> Six months later, I
+                                        made
                                         my first income from building the Telegram robot, and eight months after I
-                                        started programming,<br> I built my first website.I am interested in being hired as
+                                        started programming,<br> I built my first website.I am interested in being hired
+                                        as
                                         an intern so that I can learn new things.
                                     </p>
                                 </div>
@@ -103,7 +110,7 @@
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Information</h5>
+                                    <h5 class="card-title">Information:</h5>
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <strong>age:</strong>
@@ -121,7 +128,7 @@
                                             <div class="col-sm-4">
                                                 <strong>number:</strong>
                                             </div>
-                                            <div class="col-sm-8">989392622300</div>
+                                            <div class="col-sm-8">+989392622300</div>
                                         </div>
                                         <div class="row mt-3">
                                             <div class="row mt-3">
@@ -138,6 +145,123 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="session my-5" id="Skills">
+        <div class="d-flex justify-content-center">
+            <div class="card container">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Skills:</h3>
+                </div>
+                <div class="card aos-init aos-animate">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <span>HTML5</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 85%" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100">85%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <span>CSS3</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                                        style="width: 83%" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100">83%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>JavaScript</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">80%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>Sass</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 70%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>bootstrap</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">80%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>React js</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 70%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-3" id="Node-js-progress">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>Node js</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 60%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">60%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 mb-5">
+                            <div class="progress-continer progress-primary">
+                                <div class="progress-continer progress-primary">
+                                    <span>Python</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100">80%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- this is Scripts -->
@@ -147,57 +271,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+<script src="./src/App.js"></script>
 
 </html>
-
-
-
-
-
-
-<!-- <div class="row">
-    <div class="col-lg-6 col-md-12 text-center">
-        <div class="card-body">
-            <div class=" h4 card-title">About me:</div>
-            <p class="card-text">
-                Hello,my name is Alireza shahbaziyan.From the age of 20, I started learning Python
-                programming in earnest, and then I became familiar with JavaScript.
-                Six months later, I made my first income from building the Telegram robot, and eight
-                months after I started programming, I built my first website.
-            </p>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="card-body">
-                <div class=" h4 card-title">Information:</div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <strong>age:</strong>
-                    </div>
-                    <div class="col-sm-8">20</div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm-4">
-                        <strong>email:</strong>
-                    </div>
-                    <div class="col-sm-8">alishahbazi0831@gmail.com</div>
-                </div>
-                <div class="row mt-3">
-                    <div class="row mt-3">
-                        <div class="col-sm-4">
-                            <strong>number:</strong>
-                        </div>
-                        <div class="col-sm-8">989392622300</div>
-                </div>
-                <div class="row mt-3">
-                    <div class="row mt-3">
-                        <div class="row mt-3">
-                            <div class="col-sm-4">
-                                <strong>Address:</strong>
-                            </div>
-                            <div class="col-sm-8">iran,Khuzestan,Masjid-i-Sulaiman</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12"></div>
-    </div>
-</div> -->
